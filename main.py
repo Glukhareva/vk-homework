@@ -1,7 +1,7 @@
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
-data = pd.read_csv(r"C:\Users\Лиза\Downloads\friends.csv")
+data = pd.read_csv('friends.csv')
 friends_graph = nx.from_pandas_edgelist(data, source='ID', target='friendID')
 
 print(nx.draw_networkx(friends_graph))
